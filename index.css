@@ -73,6 +73,11 @@ body {margin:0; padding: 0;font-family:Arial;background-color: #011F3F;}
   display: block;
 }
 
+a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
 .main-container {
   width: 70%;
   height: 85vh;
@@ -84,6 +89,7 @@ body {margin:0; padding: 0;font-family:Arial;background-color: #011F3F;}
 .title {
   padding: 0.5rem;
   text-align: center;
+  vertical-align: middle;
 }
 
 .box1 {
@@ -92,14 +98,15 @@ body {margin:0; padding: 0;font-family:Arial;background-color: #011F3F;}
   margin: 2rem auto 2rem;
   border-radius: 10px;
   text-align: center;
-  background-color: yellow;
-  animation: box1a 3s forwards;
+  background-color: rgba(5, 49, 99, 0.952);
+  color: white;
+  animation: box 3s forwards;
 }
 
-@keyframes box1a {
-  from {opacity: 0;}
+@keyframes box {
+  from {opacity: 0; transform: rotate(180deg)}
   50% {opacity: 0.5;}
-  to {opacity: 1;}
+  to {opacity: 1; transform: rotate(360deg)}
 }
 
 .box2 {
@@ -109,16 +116,12 @@ body {margin:0; padding: 0;font-family:Arial;background-color: #011F3F;}
   text-align: center;
   border-radius: 10px;
   opacity: 0;
-  background-color: yellow;
-  animation: box2a 3s forwards;
+  background-color: rgba(5, 49, 99, 0.952);
+  color: white;
+  animation: box 3s forwards;
   animation-delay: 1s;
 }
 
-@keyframes box2a {
-  from {opacity: 0;}
-  50% {opacity: 0.5;}
-  to {opacity: 1;}
-}
 .box3 {
   width: 50%;
   height: 18vh;
@@ -126,15 +129,10 @@ body {margin:0; padding: 0;font-family:Arial;background-color: #011F3F;}
   text-align: center;
   border-radius: 10px;
   opacity: 0;
-  background-color: yellow;
-  animation: box3a 3s forwards;
+  background-color: rgba(5, 49, 99, 0.952);
+  color: white;
+  animation: box 3s forwards;
   animation-delay: 2s;
-}
-
-@keyframes box3a {
-  from {opacity: 0;}
-  50% {opacity: 0.5;}
-  to {opacity: 1;}
 }
 
 .chart-main {
@@ -147,6 +145,7 @@ body {margin:0; padding: 0;font-family:Arial;background-color: #011F3F;}
 }
 
 canvas {
+  margin: auto;
   visibility: hidden;
 }
 
