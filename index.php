@@ -14,25 +14,23 @@
     <div class="title flex col">
       <h1>CIT261 - Final Project</h1>
     </div>
-    <a href="#" onclick="covid()">
+    <a href="covid19.php">
     <div class="box1 flex col">
       <h2>Coronavirus - COVID19</h2>
-      <p>Click and check the most recent data about the virus</p>
     </div>
     </a>
+    <a href="game.php">
     <div class="box2 flex col">
       <h2>Memory Game</h2>
     </div>
+    </a>
+    <a href="guessing.php">
     <div class="box3 flex col">
       <h2>Guessing Game</h2>
     </div>
+    </a>
   </div>
   <script src="index.js"></script>
-  <script>
-    function covid(){
-      
-    }
-  </script>
 </body>
 
 </html>
