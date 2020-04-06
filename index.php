@@ -14,10 +14,11 @@
     <div class="title flex col">
       <h1>CIT261 - Final Project</h1>
     </div>
+    <a href="#" ontouch="">
     <div class="box1 flex col">
       <h2>Coronavirus - COVID19</h2>
       <p>Click and check the most recent data about the virus</p>
-    </div>
+    </div></a>
     <div class="box2 flex col">
       <h2>Memory Game</h2>
     </div>

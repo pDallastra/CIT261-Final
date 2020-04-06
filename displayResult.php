@@ -30,6 +30,7 @@
             let newDiv = document.createElement('div');
             newDiv.setAttribute('class', 'flex col');
             newDiv.setAttribute('id', 'guesserForm');
+            newDiv.setAttribute('style', 'text-align: center;');
             if(player.guessers == 1){
                 body.insertBefore(newDiv, body.childNodes[1]);
             } {
@@ -43,15 +44,12 @@
             let formDiv1 = document.createElement('div');
             formDiv1.setAttribute('class', 'form-group');
             guesserForm.appendChild(formDiv1);
-            
-            console.log(player);
             let formGroup = document.querySelector('.form-group');
             let p = document.createElement('p');
             p.textContent = `Player's Name: ${player.name}`;
             formGroup.appendChild(p);
             let p1 = document.createElement('p');
             let playerData = JSON.parse(localStorage.getItem(`${player.name}`));
-            console.log(playerData);
             p1.textContent = `The Favorite Color of ${playerData.name} is: ${playerData.color}`;
             formGroup.appendChild(p1);
             let p2 = document.createElement('p');
@@ -80,7 +78,7 @@
                     formDiv1.setAttribute('id', `form-group`);
                     guesserForm.appendChild(formDiv1);
                     let p = document.createElement('p');
-                    p.textContent = `Guesser Name ${newElement.name}`;
+                    p.textContent = `Guesser Name: ${newElement.name}`;
                     formDiv1.appendChild(p);
                     let p1 = document.createElement('p');
                     p1.textContent = `${newElement.name} color guess: ${newElement.color}`;
