@@ -25,10 +25,15 @@
         }
 
         let body = document.getElementById('body');
+        let player = JSON.parse(localStorage.getItem(`currentPlayerName`));
             let newDiv = document.createElement('div');
             newDiv.setAttribute('class', 'flex col');
             newDiv.setAttribute('id', 'guesserForm');
-            body.insertBefore(newDiv, body.childNodes[2]);
+            if(player.guessers == 1){
+                body.insertBefore(newDiv, body.childNodes[1]);
+            } {
+                body.insertBefore(newDiv, body.childNodes[2]);
+            }
             let form = document.createElement('form');
             let guesserForm = document.getElementById('guesserForm');
             let h2 = document.createElement('h2');
@@ -38,7 +43,6 @@
             formDiv1.setAttribute('class', 'form-group');
             guesserForm.appendChild(formDiv1);
             
-            let player = JSON.parse(localStorage.getItem(`currentPlayerName`));
             console.log(player);
             let formGroup = document.querySelector('.form-group');
             let p = document.createElement('p');
